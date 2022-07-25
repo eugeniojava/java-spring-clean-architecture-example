@@ -1,1 +1,17 @@
+# SPRING
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_service
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
 
+# EXCEPTION HANDLING
+exception-handling:
+  debug-message-enabled: true
