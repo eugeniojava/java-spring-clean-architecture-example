@@ -3,7 +3,7 @@ package com.eugeniojava.javaspringcleanarchitectureexample.user.adapter.out.pers
 import com.eugeniojava.javaspringcleanarchitectureexample.common.annotation.PersistenceAdapter;
 import com.eugeniojava.javaspringcleanarchitectureexample.user.application.port.out.ExistsUserByUsernamePort;
 import com.eugeniojava.javaspringcleanarchitectureexample.user.application.port.out.SaveUserPort;
-import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user.User;
+import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.User;
 import lombok.AllArgsConstructor;
 
 @PersistenceAdapter

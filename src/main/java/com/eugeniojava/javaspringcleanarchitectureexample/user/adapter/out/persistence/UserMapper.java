@@ -1,7 +1,7 @@
 package com.eugeniojava.javaspringcleanarchitectureexample.user.adapter.out.persistence;
 
-import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user.User;
-import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user.UserFactory;
+import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.User;
+import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.UserFactory;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 class UserMapper {
     private final UserFactory userFactory;
 
-    UserJpaEntity mapToJpaEntity(User user) {
+    public UserJpaEntity mapToJpaEntity(User user) {
         return new UserJpaEntity(
             user.getId(),
             user.getUsername(),
@@ -19,7 +19,7 @@ class UserMapper {
         );
     }
 
-    User mapToDomainEntity(UserJpaEntity userJpaEntity) {
+    public User mapToDomainEntity(UserJpaEntity userJpaEntity) {
         return userFactory.create(
             userJpaEntity.getId(),
             userJpaEntity.getUsername(),

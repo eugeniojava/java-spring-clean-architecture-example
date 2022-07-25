@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestControllerAdvice
-public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     private static final String MALFORMED_JSON_MESSAGE = "Malformed JSON request";
 
     @Value("${exception-handling.debug-message-enabled}")

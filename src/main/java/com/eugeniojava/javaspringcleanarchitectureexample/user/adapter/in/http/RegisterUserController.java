@@ -18,7 +18,7 @@ class RegisterUserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    RegisterUserHttpResponse execute(@RequestBody @Valid RegisterUserHttpRequest registerUserHttpRequest) {
+    public RegisterUserHttpResponse execute(@RequestBody @Valid RegisterUserHttpRequest registerUserHttpRequest) {
         return RegisterUserHttpResponse.fromDomain(
             registerUserUseCase.execute(RegisterUserHttpRequest.toDomain(registerUserHttpRequest))
         );

@@ -1,4 +1,4 @@
-package com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user;
+package com.eugeniojava.javaspringcleanarchitectureexample.user.domain;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,7 @@ class CommonUser implements User {
     private final String password;
     private final LocalDateTime createdAt;
 
-    CommonUser(Long id, String username, String password, LocalDateTime createdAt) {
+    public CommonUser(Long id, String username, String password, LocalDateTime createdAt) {
         this.id = id;
         this.username = username;
         this.password = password;

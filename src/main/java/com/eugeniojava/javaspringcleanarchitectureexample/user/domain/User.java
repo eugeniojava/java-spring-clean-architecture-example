@@ -1,4 +1,4 @@
-package com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user;
+package com.eugeniojava.javaspringcleanarchitectureexample.user.domain;
 
 import java.time.LocalDateTime;
 

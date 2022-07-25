@@ -5,8 +5,8 @@ import com.eugeniojava.javaspringcleanarchitectureexample.user.application.port.
 import com.eugeniojava.javaspringcleanarchitectureexample.user.application.port.out.SaveUserPort;
 import com.eugeniojava.javaspringcleanarchitectureexample.user.application.service.exception.InvalidPasswordException;
 import com.eugeniojava.javaspringcleanarchitectureexample.user.application.service.exception.UsernameAlreadyExistsException;
-import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user.User;
-import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user.UserFactory;
+import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.User;
+import com.eugeniojava.javaspringcleanarchitectureexample.user.domain.UserFactory;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

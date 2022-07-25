@@ -1,4 +1,4 @@
-package com.eugeniojava.javaspringcleanarchitectureexample.user.domain.user;
+package com.eugeniojava.javaspringcleanarchitectureexample.user.domain;
 
 import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;

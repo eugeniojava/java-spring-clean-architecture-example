@@ -31,6 +31,6 @@ public class ErrorResponse {
         errors.add(new ValidationError(field, message));
     }
 
-    record ValidationError(String field, String message) {
+    private record ValidationError(String field, String message) {
     }
 }
